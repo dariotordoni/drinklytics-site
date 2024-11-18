@@ -1,0 +1,43 @@
+#SE
+User-agent: Yandex
+User-agent: YandexTurbo
+User-agent: YandexBot
+User-agent: YandexBot/3.0
+User-agent: Baiduspider
+Disallow: /
+
+#SEOTOOLS
+User-agent: AhrefsBot/5.2
+#User-agent: AhrefsBot
+User-agent: BLEXBot
+User-agent: DotBot
+User-agent: DotBot/1.1
+#User-agent: Screaming Frog SEO Spider
+#User-agent: Screaming Frog SEO Spider/2,50
+User-agent: MJ12bot
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: SemrushBot-BM
+User-agent: SemrushBot-SA
+User-agent: SemrushBot-SI
+User-agent: SemrushBot-SI/0.97
+User-agent: proximic
+User-agent: rogerbot/1.0
+User-agent: YandexMetrika
+User-agent: YandexMetrika/2.0
+User-agent: Xenu's
+User-agent: Xenu's Link Sleuth 1.1c
+#User-agent: SISTRIX
+User-agent: SEOkicks
+User-agent: SEOkicks-Robot
+User-agent: YisouSpider
+User-agent: Qwantify
+User-agent: Uptimebot
+Disallow: /
+
+#OTHER
+User-agent: ia_archiver
+User-agent: archive.org_bot
+Disallow: /
+
+Sitemap: https://www.dariotordoni.com/sitemap.xml
