@@ -7,7 +7,7 @@
 
         /* Variabili CSS */
         :root {
-            --primary-color: #7a60ff;
+            --primary-color: #5850ec;
             --secondary-color: #cd9ffa;
             --tertiary-color: #64113F;
             --text-color: #1F2937;
@@ -27,6 +27,9 @@
             line-height: 1.6;
             color: var(--text-color);
         }
+        h1 {
+            color: var(--primary-color);
+        }
         h1, h2 {
           text-align: center;
           padding-bottom: 20px;
@@ -35,6 +38,9 @@
         img {
             max-width: 100%;
             height: auto;
+        }
+        svg {
+            fill: white;
         }
 
         /* Utility classes */
@@ -48,7 +54,7 @@
         .btn {
             display: inline-block;
             padding: 1rem 2rem;
-            background-color: var(--tertiary-color);
+            background-color: #5850ec;
             color: var(--white);
             text-decoration: none;
             border-radius: var(--border-radius);
@@ -59,16 +65,13 @@
         }
 
         .btn:hover {
-            transform: translateY(-2px);
-            background-color: var(--secondary-color);
-            color: var(--text-color);
+            transform: translateY(-10px);
         }
 
         /* Hero Section */
         .hero {
             padding: 4rem 0;
-            background: linear-gradient(to bottom, var(--primary-color), var(--light-bg));
-            color: var(--white);
+            background: linear-gradient(to bottom, white, var(--light-bg));
             text-align: center;
         }
 
@@ -199,6 +202,9 @@
 
             .hero__subtitle {
                 font-size: 1.5rem;
+            }
+            footer {
+                display: flex;
             }
         }
 
