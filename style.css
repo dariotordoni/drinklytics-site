@@ -11,7 +11,7 @@
             --secondary-color: #cd9ffa;
             --tertiary-color: #64113F;
             --text-color: #1F2937;
-            --light-bg: #f0e1ff;
+            --light-bg: #f6edff;
             --white: #FFFFFF;
             --max-width: 1200px;
             --border-radius: 12px;
@@ -40,7 +40,7 @@
             height: auto;
         }
         svg {
-            fill: white;
+            fill: #000;
         }
 
         /* Utility classes */
@@ -62,6 +62,7 @@
             transition: transform 0.3s ease;
             margin-top: 20px;
             margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .btn:hover {
@@ -155,7 +156,8 @@
             background: var(--white);
             padding: 1.5rem;
             border-radius: var(--border-radius);
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         /* Download Section */
@@ -172,13 +174,13 @@
         /* Footer */
         .footer {
             padding: 2rem 0;
-            background-color: var(--primary-color);
-            color: var(--white);
+            background: linear-gradient(to top, white, var(--light-bg));
+            color: #000;
             text-align: center;
         }
 
         .footer a {
-            color: var(--white);
+            color: #000;
             text-decoration: none;
         }
 
