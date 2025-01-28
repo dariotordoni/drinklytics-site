@@ -1,11 +1,3 @@
-#SE
-User-agent: Yandex
-User-agent: YandexTurbo
-User-agent: YandexBot
-User-agent: YandexBot/3.0
-User-agent: Baiduspider
-Disallow: /
-
 #SEOTOOLS
 User-agent: AhrefsBot/5.2
 #User-agent: AhrefsBot
@@ -40,4 +32,4 @@ User-agent: ia_archiver
 User-agent: archive.org_bot
 Disallow: /
 
-Sitemap: https://www.dariotordoni.com/sitemap.xml
+Sitemap: https://www.drinklytics.app/sitemap.xml

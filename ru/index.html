@@ -7,7 +7,7 @@
     <meta name="author" content="Dario Tordoni">
     <link rel="icon" type="image/png" href="https://www.drinklytics.app/img/favicon.png">
     <link rel="canonical" href="https://www.drinklytics.app/ru/" />
-    <link rel="stylesheet" type="text/css" href="https://www.drinklytics.app/style.min.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="https://www.drinklytics.app/style.min.css?v=5" />
     <link rel="alternate" href="https://www.drinklytics.app" hreflang="en" />
     <link rel="alternate" href="https://www.drinklytics.app/de/" hreflang="de" />
     <link rel="alternate" href="https://www.drinklytics.app/es/" hreflang="es" />
@@ -62,6 +62,34 @@
     </script>
 </head>
 <body>
+    <div class="hamburger-icon" onclick="toggleMenu()">
+        <span>&#127760</span>
+    </div>
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <a href="https://www.drinklytics.app/de/">DE</a>
+        <a href="https://www.drinklytics.app">EN</a>
+        <a href="https://www.drinklytics.app/es/">ES</a>
+        <a href="https://www.drinklytics.app/fr/">FR</a>
+        <a href="https://www.drinklytics.app/it/">IT</a>
+        <a href="https://www.drinklytics.app/pt/">PT</a>
+        <a href="https://www.drinklytics.app/ru/">RU</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('hamburgerMenu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'flex';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+
+        // Assicurati che il menu sia nascosto all'inizio
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('hamburgerMenu').style.display = 'none';
+        });
+    </script>
     <!-- Герой Секция -->
     <section class="hero">
         <div class="container">
@@ -79,6 +107,26 @@
                 <!-- <a href='http://play.google.com/store/?utm_source=drinklytics.app'><img class="store-button" alt='Скачать в Google Play' src='https://www.drinklytics.app/img/google-play-badge.png'/></a> -->
             </div>
             <img class="screenshot" alt="скриншот приложения для отслеживания напитков" src="https://www.drinklytics.app/img/screenshot.png">
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <h2>Что говорят наши пользователи</h2>
+            <div class="team__grid">
+                <div class="team-member">
+                    <p><i>"Кто дал вам мой e-mail?"</i></p>
+                    <h3>- Marco</h3>
+                </div>
+                <div class="team-member">
+                    <p><i>"О каком приложении вы говорите?"</i></p>
+                    <h3>- Laura</h3>
+                </div>
+                <div class="team-member">
+                    <p><i>"Извините, я думаю, вы ошиблись."</i></p>
+                    <h3>- Giovanni</h3>
+                </div>
+            </div>
         </div>
     </section>
 

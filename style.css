@@ -69,6 +69,35 @@
             transform: translateY(-10px);
         }
 
+        .hamburger-menu {
+            position: fixed;
+            top: 60px; /* Sposta il menu un po' più in basso per non coprire l'icona */
+            right: 15px;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+            z-index: 1000; /* Assicurati che il menu sia sopra altri elementi */
+        }
+        .hamburger-icon span {
+            font-size: 20px;
+        }
+        .hamburger-icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 1001; /* Assicurati che l'icona sia sopra il menu */
+        }
+        .hamburger-menu a {
+            text-decoration: none;
+            color: black;
+            margin: 5px 0;
+        }
+
         /* Hero Section */
         .hero {
             padding: 4rem 0;
