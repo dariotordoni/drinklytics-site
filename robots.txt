@@ -32,4 +32,10 @@ User-agent: ia_archiver
 User-agent: archive.org_bot
 Disallow: /
 
+#OTHER
+User-agent: *
+Disallow: /search/
+Disallow: /parking.php
+
+
 Sitemap: https://www.drinklytics.app/sitemap.xml
