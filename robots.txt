@@ -36,6 +36,6 @@ Disallow: /
 User-agent: *
 Disallow: /search/
 Disallow: /parking.php
-
+Disallow: /cdn-cgi/
 
 Sitemap: https://www.drinklytics.app/sitemap.xml
