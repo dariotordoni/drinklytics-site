@@ -131,6 +131,24 @@
             margin-bottom: 20px;
         }
 
+        .dynamic-headline .variant {
+            opacity: 0;
+            position: absolute;
+        }
+        
+        .dynamic-headline {
+            position: relative;
+            height: 1.5em; /* Adatta in base all’altezza della frase */
+        }
+        
+        .dynamic-headline .show {
+            opacity: 1;
+            transition: opacity 1s ease;
+            position: relative;
+        }
+
+        
+
         /* Features Section */
         .features {
             padding: 4rem 0;
