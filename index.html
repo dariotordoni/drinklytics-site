@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Drinklytics: Record, rate, and remember your favorite drinks. Free and secure.">
+    <meta name="description" content="Drinklytics: Registra, valuta e ricorda i tuoi drink preferiti. Gratuito e sicuro.">
     <meta name="author" content="Dario Tordoni">
-    <link rel="icon" type="image/png" href="https://www.drinklytics.app/img/favicon.png">
+    <link rel="icon" type="image/png" href="https://www.drinklytics.app/img//favicon.png">
     <link rel="canonical" href="https://www.drinklytics.app" />
-    <link rel="stylesheet" type="text/css" href="https://www.drinklytics.app/style.min.css?v=6" />
-    <link rel="alternate" href="https://www.drinklytics.app" hreflang="en" />
+    <link rel="stylesheet" type="text/css" href="https://www.drinklytics.app/style.min.css?v=7" /> <link rel="alternate" href="https://www.drinklytics.app" hreflang="en" />
     <link rel="alternate" href="https://www.drinklytics.app/de/" hreflang="de" />
     <link rel="alternate" href="https://www.drinklytics.app/es/" hreflang="es" />
     <link rel="alternate" href="https://www.drinklytics.app/fr/" hreflang="fr" />
@@ -18,7 +17,6 @@
     <link rel="alternate" href="https://www.drinklytics.app" hreflang="x-default" />
     <meta name="robots" content="index, follow">
     <script defer src="https://umami-eta-eight.vercel.app/script.js" data-website-id="3cc5ac66-a582-45aa-804f-9f308300f90b" data-domains="www.drinklytics.app"></script>
-    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -36,188 +34,144 @@
         }, 5000);
     });</script>
     
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.drinklytics.app">
     <meta property="og:title" content="Drinklytics, the app to track your drinks">
     <meta property="og:description" content="Drinklytics: Record, rate, and remember your favorite drinks. Free and secure.">
-    <meta property="og:image" content="https://www.drinklytics.app/img/og_image.png">
+    <meta property="og:image" content="https://www.drinklytics.app/img//og_image.png">
 
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.drinklytics.app">
     <meta property="twitter:title" content="Drinklytics, the app to track your drinks">
     <meta property="twitter:description" content="Drinklytics: Record, rate, and remember your favorite drinks. Free and secure.">
-    <meta property="twitter:image" content="https://www.drinklytics.app/img/og_image.png">
+    <meta property="twitter:image" content="https://www.drinklytics.app/img//og_image.png">
 
-    <title>Drinklytics, your simple drink tracker and rating app. Log beer, wine, spirits & cocktails.</title>
+    <title>Drinklytics, your simple tasting notes app. Log every sip, beer, wine & spirits.</title>
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Drinklytics",
-        "description": "Whether you are a beer lover, wine connoisseur, or cocktail enthusiast, Drinklytics helps you keep track of all your favorite drinks. Never forget a great drink again!",
-        "url": "https://play.google.com/store/apps/details?id=app.drinklytics.android",
-        "operatingSystem": "Android",
-        "applicationCategory": "LifestyleApplication",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": 5,
-            "ratingCount": 5
-        },
-        "image": "https://www.drinklytics.app/img/favicon.png",
-        "screenshot": [
-            "https://www.drinklytics.app/img/screenshot.png"
-        ],
-        "offers": {
-        "@type": "Offer",
-        "price": "0.00",
-        "priceCurrency": "EUR",
-        "url": "https://play.google.com/store/apps/details?id=app.drinklytics.android"
-        },
-        "author": {
-            "@type": "Person",
-            "name": "Dario Tordoni",
-            "url": "https://www.dariotordoni.com"
-        },
-        "contentRating": "IARC 3+"
-    }
-    </script>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNGSTHJ5"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="hamburger-icon" onclick="toggleMenu()">
-        <span>&#127760</span>
-    </div>
-    <div class="hamburger-menu" id="hamburgerMenu">
-        <a href="https://www.drinklytics.app/de/">DE</a>
-        <a href="https://www.drinklytics.app">EN</a>
-        <a href="https://www.drinklytics.app/es/">ES</a>
-        <a href="https://www.drinklytics.app/fr/">FR</a>
-        <a href="https://www.drinklytics.app/it/">IT</a>
-        <a href="https://www.drinklytics.app/pt/">PT</a>
-        <a href="https://www.drinklytics.app/ru/">RU</a>
-    </div>
+    <header class="main-header">
+        <nav class="main-nav container">
+            <a href="#" class="logo">
+                <img src="https://www.drinklytics.app/img//favicon.png" alt="Drinklytics Logo">
+                <span>Drinklytics</span>
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="language-selector">
+                    <span class="globe-icon">&#127760;</span>
+                    <div class="language-dropdown">
+                        <a href="https://www.drinklytics.app/de/">DE</a>
+                        <a href="https://www.drinklytics.app">EN</a>
+                        <a href="https://www.drinklytics.app/es/">ES</a>
+                        <a href="https://www.drinklytics.app/fr/">FR</a>
+                        <a href="https://www.drinklytics.app/it/">IT</a>
+                        <a href="https://www.drinklytics.app/pt/">PT</a>
+                        <a href="https://www.drinklytics.app/ru/">RU</a>
+                    </div>
+                </div>
+            </div>
+             <div class="hamburger-icon" id="mobile-menu-trigger">
+                <span>&#9776;</span>
+            </div>
+        </nav>
+    </header>
 
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('hamburgerMenu');
-            if (menu.style.display === 'none' || menu.style.display === '') {
-                menu.style.display = 'flex';
-            } else {
-                menu.style.display = 'none';
-            }
-        }
-
-        // Assicurati che il menu sia nascosto all'inizio
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('hamburgerMenu').style.display = 'none';
-        });
-    </script>
-    <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
+         <div class="container">
             <div class="hero__content">
-                <h1 class="hero__title">Drinklytics</h1>
-                <h2 class="hero__subtitle dynamic-headline">
-                    Your personal, free, 
-                    <span class="variant show">wine tasting journal app</span>
-                    <span class="variant">beer tasting journal app</span>
-                    <span class="variant">spirits tasting journal app</span>
-                </h2>
-<!--                 <p class="hero__subtitle">Save, rate, and rediscover your favorite drinks</p> -->
+                <h1 class="hero__title">Your free,<br> personal,<br> tasting notes app</h1>
+<!--                 <h2 class="hero__subtitle dynamic-headline">
+                </h2> -->
                 <p class="hero__subtitle">
                     Taste. Log. Rediscover.
                 </p>
                 <a href='https://play.google.com/store/apps/details?id=app.drinklytics.android&referrer=utm_source%3Ddrinklytics.app%26utm_medium%3Ddisplay%26utm_campaign%3Dpersonal'><img class="store-button" alt='Get it on Google Play' src='https://www.drinklytics.app/img/google-play-badge.png'/></a>
             </div>
-            <img class="screenshot" alt="the screenshot of an app used for drink tracking" src="https://www.drinklytics.app/img/screenshot.png">
+            <img class="screenshot" alt="the screenshot of an app used for drink tracking" src="https://www.drinklytics.app/img/0.png">
         </div>
     </section>
 
-<!--     <section class="team" id="team">
-        <div class="container">
-            <h2>What our users say</h2>
-            <div class="team__grid">
-                <div class="team-member">
-                    <p><i>"Who gave you my email?"</i></p>
-                    <h3>- Marco</h3>
-                </div>
-                <div class="team-member">
-                    <p><i>"Which app are you talking about?"</i></p>
-                    <h3>- Laura</h3>
-                </div>
-                <div class="team-member">
-                    <p><i>"I'm sorry, I think you have the wrong person."</i></p>
-                    <h3>- Giovanni</h3>
-                </div>
-            </div>
-        </div>
-    </section>
- -->
-    <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
-            <h2>Main Features</h2>
-            <div class="features__grid">
-                <div class="feature-card">
-                    <!-- <img src="/api/placeholder/64/64" alt="Feature 1" /> -->
-                    <h3>Your personal beer tracker</h3>
-                    <p>Keep a simple log of every beer you try. Use it as a personal beer tasting notes app, to rate your favorites and discover which styles you truly love.</p>
+            <h2>Features</h2>
+            
+            <div class="feature-row">
+                <div class="feature-text">
+                    <h3>Your personal tasting notes app</h3>
+                    <p>Transform every sip into a lasting memory. Drinklytics is your digital journal, allowing you to record, rate, and relive your tasting adventures. Never forget a remarkable drink again, build a rich, personal archive of every wine, beer, and spirit you discover.</p>
                 </div>
-                <div class="feature-card">
-                    <!-- <img src="/api/placeholder/64/64" alt="Feature 1" /> -->
-                    <h3>Simple wine tasting notes app</h3>
-                    <p>Use this simple wine tracker to log wines you taste. Your ratings will help you always remember which ones to buy again.</p>
-                </div>
-                <div class="feature-card">
-                    <!-- <img src="/api/placeholder/64/64" alt="Feature 1" /> -->
-                    <h3>Track cocktails & spirits</h3>
-                    <p>Your log isn't just for beer and wine. Use it as a cocktails tracker for mixed drinks or for your spirits tasting journey.</p>
-                </div>
-                <div class="feature-card">
-                    <!-- <img src="/api/placeholder/64/64" alt="Feature 2" /> -->
-                    <h3>Quickly find your favorites</h3>
-                    <p>Your entire tasting history is searchable. Instantly find any drink you've ever logged in your personal drink library.</p>
-                </div>
-                <div class="feature-card">
-                   <!--  <img src="/api/placeholder/64/64" alt="Feature 3" /> -->
-                    <h3>Your private drink library</h3>
-                    <p>This is not a social network. Your drink tasting log is for your eyes only and is saved privately on your device.</p>
-                </div>
-                <div class="feature-card">
-                    <!-- <img src="/api/placeholder/64/64" alt="Feature 3" /> -->
-                    <h3>Privacy is guaranteed</h3>
-                    <p>The app does not collect or share personal data. Your entire drink archive is stored securely and only on your device.</p>
+                <div class="feature-image">
+                    <img src="https://www.drinklytics.app/img/1.png" alt="Screenshot of beer tracking feature">
                 </div>
             </div>
+
+            <div class="feature-row reversed">
+                <div class="feature-text">
+                    <h3>Track wine, spirits & beer</h3>
+                    <p>Whether you're a connoisseur of craft beers, a wine enthusiast, or a spirits aficionado, Drinklytics has you covered. The app functions as your ultimate wine tasting journal, beer tasting companion, and spirits record keeper, making it easy to log notes for any beverage you try.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="https://www.drinklytics.app/img/2.png" alt="Screenshot of wine tracking feature">
+                </div>
+            </div>
+
+            <div class="feature-row">
+                <div class="feature-text">
+                    <h3>Customize entries with tags & notes</h3>
+                    <p>Dive deep into your tasting experience. You can add comprehensive notes, personal scores, and flexible tags to every entry. Tailor your records with custom characteristics and tags, ensuring every detail of your unique tasting journey is captured exactly how you like it.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="https://www.drinklytics.app/img/3.png" alt="Screenshot of spirits tracking feature">
+                </div>
+            </div>
+
+             <div class="feature-row reversed">
+                <div class="feature-text">
+                    <h3>All your drink info, a tap away</h3>
+                    <p>Your entire private library of tasting adventures is always at your fingertips. Quickly access past entries to recall specific tasting notes, ratings, or any other details you've added. All the information you need about your favorite (or least favorite!) drinks is available whenever you need it.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="https://www.drinklytics.app/img/4.png" alt="Screenshot of private library">
+                </div>
+            </div>
+
+            <div class="feature-row">
+                <div class="feature-text">
+                    <h3>Flexible search to rediscover every sip</h3>
+                    <p>Retrieves the perfect drink for the perfect moment. The simple but powerful search allows you to rediscover past entries using any custom tag you've added. Search by aroma, food pairing, occasion, or any other detail. Ensuring you can always pinpoint the right drink for the right memory.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="https://www.drinklytics.app/img/5.png" alt="Screenshot of spirits tracking feature">
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team" id="team">
-        <div class="container">
-            <h2>Why Drinklytics</h2>
+    <section class="team" id="about"> <div class="container">
+            <h2>About</h2>
             <div class="team__grid">
                 <div class="team-member">
-                    <!-- <img src="/api/placeholder/150/150" alt="Team Member 1" class="team-member__image"> -->
                     <p>Hello, I'm Dario Tordoni, the developer of Drinklytics.</p>
                     <p>One day I bought a bottle of wine, and when I got home my wife reminded me that I had already tried that wine, and I didn’t even like it.</p>
-                    <p>I've always had a terrible memory for these things. That's why I created Drinklytics. If you're interested in learning more, you can follow its development story.</p>
+                    <p>I've always had a terrible memory for these things. That's why I created Drinklytics. If you're interested in learning more, you can follow its development journey.</p>
+                    <p>I'm really excited to share this first version with you! Think of it as the starting point, because the real fun begins now: I'm passionately continuing to develop it, and I already have a lot of ideas for new functions that will make it richer and more powerful over time.</p>
                     <h3><a href="https://www.dariotordoni.com/drinklytics/" rel="noopener" class="btn">Read more</a></h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
     <section class="faq" id="faq">
         <div class="container">
-            <h2>Frequently Asked Questions</h2>
+            <h2>FAQ</h2>
             <div class="faq__item">
                 <h3>What drinks can I record?</h3>
                 <p>You can save beers, wines, and spirits.</p>
@@ -276,6 +230,33 @@
         <div class="container">
             <a rel="me noopener" href="https://www.linkedin.com/in/dario-tordoni/en"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path></svg></a>
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const menuTrigger = document.getElementById('mobile-menu-trigger');
+                const navLinks = document.querySelector('.nav-links');
+                // Seleziona specificamente i link del menu di navigazione
+                const menuItems = document.querySelectorAll('.nav-links ul a'); 
+
+                // Funzione per aprire/chiudere il menu con l'icona hamburger
+                if (menuTrigger && navLinks) {
+                    menuTrigger.addEventListener('click', () => {
+                        navLinks.classList.toggle('mobile-visible');
+                    });
+                }
+
+                // NUOVA FUNZIONE: Chiude il menu quando si clicca su una voce
+                if (menuItems && navLinks) {
+                    menuItems.forEach(item => {
+                        item.addEventListener('click', () => {
+                            // Se il menu è visibile, chiudilo
+                            if (navLinks.classList.contains('mobile-visible')) {
+                                navLinks.classList.remove('mobile-visible');
+                            }
+                        });
+                    });
+                }
+            });
+        </script>
     </footer>
 </body>
 </html>

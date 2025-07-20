@@ -7,11 +7,14 @@
 
         /* Variabili CSS */
         :root {
-            --primary-color: #5850ec;
-            --secondary-color: #cd9ffa;
+            /* --primary-color: #5850ec; */
+            --primary-color: #8b5cf6;
+            /* --secondary-color: #cd9ffa; */
+            --secondary-color: #DBE7FA;
             --tertiary-color: #64113F;
             --text-color: #1F2937;
-            --light-bg: #f6edff;
+            /* --light-bg: #f6edff; */
+            --light-bg: #DBE7FA;
             --white: #FFFFFF;
             --max-width: 1200px;
             --border-radius: 12px;
@@ -35,6 +38,10 @@
           padding-bottom: 20px;
         }
 
+        h2 {
+            font-size: 1.8rem;
+        }
+
         img {
             max-width: 100%;
             height: auto;
@@ -54,7 +61,7 @@
         .btn {
             display: inline-block;
             padding: 1rem 2rem;
-            background-color: #5850ec;
+            background-color: var(--primary-color);
             color: var(--white);
             text-decoration: none;
             border-radius: var(--border-radius);
@@ -69,39 +76,291 @@
             transform: translateY(-10px);
         }
 
-        .hamburger-menu {
-            position: fixed;
-            top: 60px; /* Sposta il menu un po' più in basso per non coprire l'icona */
-            right: 15px;
-            background-color: white;
-            border: 1px solid #ccc;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: none;
-            flex-direction: column;
-            z-index: 1000; /* Assicurati che il menu sia sopra altri elementi */
-        }
-        .hamburger-icon span {
-            font-size: 20px;
-        }
-        .hamburger-icon {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            cursor: pointer;
-            z-index: 1001; /* Assicurati che l'icona sia sopra il menu */
-        }
-        .hamburger-menu a {
-            text-decoration: none;
-            color: black;
-            margin: 5px 0;
-        }
+/* =================================== */
+/* NUOVI STILI: Header & Navigation    */
+/* =================================== */
+.main-header {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin-left: 2rem;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Effetto sottolineatura al passaggio del mouse */
+.nav-links ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+}
+.globe-icon {
+    font-size: 1.5rem;
+}
+
+/* Selettore Lingua */
+.language-selector {
+    position: relative;
+    margin-left: 2rem;
+    cursor: pointer;
+    /* padding-bottom: 15px; */
+}
+
+.language-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: var(--border-radius);
+    padding: 0.5rem;
+    /* RIMOSSO: margin-top: 10px; */ /* Questa era la causa del problema */
+    flex-direction: column;
+}
+
+/* Questa regola non necessita di modifiche */
+.language-selector:hover .language-dropdown {
+    display: flex;
+}
+
+.language-dropdown a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.language-dropdown a:hover {
+    background-color: var(--light-bg);
+}
+
+/* Rimuovi il vecchio menu hamburger (se necessario) */
+/* .hamburger-menu, .hamburger-icon { display: none; } */
+.hamburger-icon {
+  display: none; /* Nascosto di default su desktop */
+  cursor: pointer;
+  font-size: 24px;
+}
+
+
+/* =================================== */
+/* NUOVI STILI: Sezione Features       */
+/* =================================== */
+.features {
+    padding: 4rem 0;
+    background-color: var(--light-bg);
+}
+
+/* Rimuovi la vecchia griglia e stili delle card */
+.features__grid {
+    display: block; /* O rimuovila completamente se non serve più */
+}
+.feature-card {
+    display: none; /* Nascondi le vecchie card */
+}
+
+/* Nuova struttura a righe */
+.feature-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.feature-text p,
+.team-member p,
+.faq__item {
+    font-size: 1.5rem;
+}
+
+.feature-text h3 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.feature-image {
+    text-align: center;
+}
+
+.feature-image img {
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    /* width: 100%; */
+    max-height: 650px; /* Imposta un'altezza massima! Puoi aggiustare questo valore. */
+    object-fit: cover; /* Ritaglia l'immagine per riempire lo spazio senza distorcerla. */
+    object-position: top; /* Mostra la parte alta dello screenshot, che di solito è la più importante. */
+
+
+     transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-image img:hover {
+    transform: scale(1.3); /* Ingrandisce l'immagine del 10% (1.1 volte la sua dimensione originale) */
+}
+
+
+/* Stile per la riga invertita */
+.feature-row.reversed .feature-image {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.feature-row.reversed .feature-text {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* =================================== */
+/* AGGIORNAMENTI MEDIA QUERIES         */
+/* =================================== */
+
+/* Rendi il menu responsive */
+/* style.css */
+
+/* =================================== */
+/* AGGIORNAMENTI MEDIA QUERIES         */
+/* =================================== */
+
+/* Rendi il menu responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        /* Nascondi il menu di default e definisci come deve apparire quando aperto */
+        display: none;
+        position: absolute;
+        top: 70px; /* Altezza della navbar, per posizionarsi subito sotto */
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        z-index: 999;
+    }
+
+    /* NUOVA CLASSE: Questa classe viene attivata da JS per mostrare il menu */
+    .nav-links.mobile-visible {
+        display: flex;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links ul li {
+        margin: 1rem 0; /* Spaziatura verticale tra i link */
+        margin-left: 0; /* Resetta il margine laterale */
+    }
+
+    .language-selector {
+        margin-left: 0; /* Centra il selettore lingua nel menu mobile */
+        margin-top: 1rem;
+    }
+    
+    .hamburger-icon {
+        display: block; /* Mostra l'icona hamburger su mobile */
+    }
+    
+    /* Layout Features per mobile */
+    .feature-row, .feature-row.reversed {
+        grid-template-columns: 1fr; /* Una colonna per il mobile */
+        gap: 2rem;
+        text-align: center;
+    }
+
+    /* Assicura che l'immagine sia sempre sopra il testo su mobile */
+    .feature-row .feature-image,
+    .feature-row.reversed .feature-image {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .feature-row .feature-text,
+    .feature-row.reversed .feature-text {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+/* Aggiusta il layout Hero per tablet */
+@media (max-width: 1024px) {
+    .hero .container {
+        flex-direction: column;
+    }
+    .hero__content {
+        text-align: center;
+    }
+    .hero h1,
+    .hero h2 {
+        text-align: center;
+    }
+}
 
         /* Hero Section */
         .hero {
             padding: 4rem 0;
-            background: linear-gradient(to bottom, white, var(--light-bg));
+            background: var(--light-bg);
             text-align: center;
         }
 
@@ -186,6 +445,10 @@
             text-align: center;
         }
 
+        .team-member p {
+            text-align: left;
+        }
+        
         .team-member__image {
             width: 150px;
             height: 150px;
@@ -211,7 +474,7 @@
         .download {
             padding: 4rem 0;
             text-align: center;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background: var(--primary-color);
             color: var(--white);
         }
         .store-button {
