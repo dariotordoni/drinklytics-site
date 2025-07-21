@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Drinklytics: Registra, valuta e ricorda i tuoi drink preferiti. Gratuito e sicuro.">
     <meta name="author" content="Dario Tordoni">
-    <link rel="icon" type="image/png" href="https://www.drinklytics.app/img//favicon.png">
-    <link rel="canonical" href="https://www.drinklytics.app" />
-    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="icon" type="image/png" href="https://www.drinklytics.app/img/favicon.png">
+    <link rel="canonical" href="https://www.drinklytics.app/it/" />
+    <link rel="stylesheet" type="text/css" href="https://www.drinklytics.app/style.min.css?v=7" />
     <link rel="alternate" href="https://www.drinklytics.app" hreflang="en" />
     <link rel="alternate" href="https://www.drinklytics.app/de/" hreflang="de" />
     <link rel="alternate" href="https://www.drinklytics.app/es/" hreflang="es" />
@@ -23,31 +23,51 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WNGSTHJ5');</script>
-
-     <script>document.addEventListener("DOMContentLoaded", () => {
-        const variants = document.querySelectorAll(".dynamic-headline .variant");
-        let current = 0;
-
-        setInterval(() => {
-            variants[current].classList.remove("show");
-            current = (current + 1) % variants.length;
-            variants[current].classList.add("show");
-        }, 5000);
-    });</script>
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.drinklytics.app">
+    <meta property="og:url" content="https://www.drinklytics.app/it/">
     <meta property="og:title" content="Drinklytics, l'app per tracciare i tuoi drink">
     <meta property="og:description" content="Drinklytics: Registra, valuta e ricorda i tuoi drink preferiti. Gratuito e sicuro.">
     <meta property="og:image" content="https://www.drinklytics.app/img//og_image.png">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.drinklytics.app">
+    <meta property="twitter:url" content="https://www.drinklytics.app/it/">
     <meta property="twitter:title" content="Drinklytics, l'app per tracciare i tuoi drink">
     <meta property="twitter:description" content="Drinklytics: Registra, valuta e ricorda i tuoi drink preferiti. Gratuito e sicuro.">
     <meta property="twitter:image" content="https://www.drinklytics.app/img//og_image.png">
 
     <title>Drinklytics, la tua semplice app per note di degustazione. Registra ogni sorso, birra, vino e distillato.</title>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Drinklytics",
+            "operatingSystem": "Android",
+            "applicationCategory": "Utility",
+            "offers": {
+                "@type": "Offer",
+                "price": "0.00",
+                "priceCurrency": "USD"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Dario Tordoni",
+                "url": "https://www.dariotordoni.com",
+                "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "tordoni.dario@gmail.com",
+                "contactType": "Customer Service"
+                }
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "6"
+            }
+        }
+    </script>
+
 
 </head>
 <body>
@@ -56,7 +76,7 @@
     <header class="main-header">
         <nav class="main-nav container">
             <a href="#" class="logo">
-                <img src="https://www.drinklytics.app/img//favicon.png" alt="Logo Drinklytics">
+                <img src="https://www.drinklytics.app/img/favicon.png" alt="Logo Drinklytics">
                 <span>Drinklytics</span>
             </a>
             <div class="nav-links">
